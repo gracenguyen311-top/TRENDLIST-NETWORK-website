@@ -502,18 +502,18 @@
 
     /* FOOTER */
     footer {
-      background: var(--ink);
-      color: var(--paper);
+      background: var(--paper);
+      color: var(--ink);
       padding: 5rem 4rem 3rem;
     }
     .footer-top {
       display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr 1fr;
-      gap: 3rem;
-      margin-bottom: 4rem;
-      border-bottom: 1px solid rgba(245,240,232,0.08);
-      padding-bottom: 4rem;
-    }
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid rgba(13,13,13,0.12);
+  padding-bottom: 4rem;
+}
     .footer-brand {}
     .footer-logo {
   margin-bottom: 1rem;
@@ -528,9 +528,9 @@
 }
     .footer-tagline {
       font-size: 0.88rem;
-      line-height: 1.7;
-      color: rgba(245,240,232,0.45);
-      max-width: 240px;
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 240px;
     }
     .footer-col-title {
       font-size: 0.7rem;
@@ -545,17 +545,17 @@
     }
     .footer-links a {
       font-size: 0.88rem;
-      color: rgba(245,240,232,0.5);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .footer-links a:hover { color: var(--paper); }
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--ink); }
     .footer-bottom {
       display: flex; align-items: center; justify-content: space-between;
     }
     .footer-copy {
       font-size: 0.78rem;
-      color: rgba(245,240,232,0.3);
+      color: var(--muted);
     }
     .social-links {
       display: flex; gap: 1.5rem;
@@ -564,7 +564,7 @@
       font-size: 0.75rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: rgba(245,240,232,0.4);
+      color: var(--muted);
       text-decoration: none;
       transition: color 0.2s;
     }
