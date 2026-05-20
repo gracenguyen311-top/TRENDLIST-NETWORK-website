@@ -64,14 +64,16 @@
       mix-blend-mode: multiply;
     }
     .nav-logo {
-      font-family: var(--serif);
-      font-weight: 900;
-      font-size: 1.4rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--ink);
-      text-decoration: none;
-    }
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
     .nav-links {
       display: flex; gap: 2.5rem;
       list-style: none;
@@ -514,13 +516,14 @@
     }
     .footer-brand {}
     .footer-logo {
-      font-family: var(--serif);
-      font-size: 1.8rem;
-      font-weight: 900;
-      letter-spacing: 0.1em;
-      margin-bottom: 1rem;
-      color: var(--paper);
-    }
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
     .footer-tagline {
       font-size: 0.88rem;
       line-height: 1.7;
@@ -606,7 +609,9 @@
 
   <!-- NAV -->
   <nav>
-    <a href="#" class="nav-logo">VANTA</a>
+    <a href="#" class="nav-logo">
+  <img src="images/logo.png" alt="Trendlist Network logo">
+    </a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#work">Work</a></li>
@@ -800,7 +805,9 @@
   <footer>
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="footer-logo">VANTA</div>
+        <div class="footer-logo">
+  <img src="images/logo.png" alt="Trendlist Network logo">
+</div>
         <p class="footer-tagline">A brand agency for companies who refuse to be ordinary.</p>
       </div>
       <div>
